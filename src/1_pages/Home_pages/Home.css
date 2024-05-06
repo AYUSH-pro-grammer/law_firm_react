@@ -1,0 +1,83 @@
+.upper_body {
+    color: black; 
+    width: 100vw; 
+    height: 60vh;
+    background-color: skyblue;
+  }
+  .heading{
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px ;
+    font-size: 3.5vw;
+    padding: 30px;
+    
+  }
+  @media(max-width:400px){
+    .heading{
+        font-size: 6vw ;
+
+    }
+    .upper_body{
+        height: 40vh;
+    }
+  }
+
+  @media(max-width:700px){
+    .heading{
+        font-size: 5vw ;
+
+    }
+    .upper_body{
+        height: 50vh;
+    }
+  }
+
+  .btn_cont{
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 10vh 10vh;
+    grid-template-columns: 20% 1fr 20%;
+  
+  }
+  .btn_1{
+    border:1px solid white;
+    color: skyblue;
+    background-color: white;
+    grid-area: 1 / 2 / 2 / 3;
+    height: 7.5vh;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: auto;
+    border-radius: 20px;
+    
+  
+  }
+  
+  .btn_2{
+    border-radius: 20px;
+    border:1px solid white;
+    color: white;
+    text-decoration: none;
+    grid-area: 2 / 2 / 2 / 3;
+    height: 8vh;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: auto;
+  }
+  
+  .btn_1:hover{
+    color: rgb(89, 89, 247);
+  }
+  
+  .btn_2:hover{
+    color: whitesmoke;
+  }
+  

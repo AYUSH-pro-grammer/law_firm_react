@@ -1,0 +1,104 @@
+@keyframes card_animin{
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.all_cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_main_cont{
+    width: 300px;
+    margin: 10px;
+    border: 2px solid skyblue;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 1s ease;
+    height: 40px;
+    
+}
+.card_main_cont_toggle{
+    width: 300px;
+    margin: 10px;
+    border: 2px solid skyblue;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 1s ease;
+    height: 500px;
+
+}
+
+.card_not_extend{
+    max-width: 300px;
+    display: flex;
+    margin: 10px;
+    animation-name: card_animin;
+    animation-duration: 1.6s;
+    animation-name: card_animin;
+    animation-duration: 1.6s;
+}
+.card_label{
+    flex: 10;
+    
+}
+.card_add{
+    justify-content: flex-end;
+    transition: transform 0.3s ease;
+}
+.card_add.active {
+    transform: rotate(135deg); /* Rotate 45 degrees when active */
+}
+/* ------------------------------ */
+.card_extend{
+    max-width: 300px;
+    display: none;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 10px;
+    animation-name: card_animin;
+    animation-duration: 1.6s;
+    opacity: 0; /* Initially hide the extended card and set opacity to 0 */
+    transition: opacity 0.3s ease;
+}
+.card_extend_toggle{
+    max-width: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 10px;
+    animation-name: card_animin;
+    animation-duration: 1.6s;
+    transition: opacity 0.3s ease;
+
+}
+
+.card_image{
+    max-width: 300px;
+    border-radius: 20px;
+}
+.card_content{
+    max-width: 300px;
+    margin: 10px;
+    font-size: 19px;
+    padding: 2px;
+    
+}
+.Card_container_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
